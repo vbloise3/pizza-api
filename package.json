@@ -1,0 +1,19 @@
+{
+  "name": "pizza-api",
+  "version": "1.0.0",
+  "description": "pizza api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbloise3/pizza-api.git"
+  },
+  "author": "Vince Bloise",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbloise3/pizza-api/issues"
+  },
+  "homepage": "https://github.com/vbloise3/pizza-api#readme"
+}
