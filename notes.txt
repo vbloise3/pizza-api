@@ -1,0 +1,17 @@
+##To create the lambda function:
+claudia create --region us-east-1 --api-module api
+
+
+##API lambda function info:
+{
+  "lambda": {
+    "role": "pizza-api-executor",
+    "name": "pizza-api",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "h1ofvobey9",
+    "module": "api",
+    "url": "https://h1ofvobey9.execute-api.us-east-1.amazonaws.com/latest"
+  }
+}
