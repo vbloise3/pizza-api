@@ -4,14 +4,23 @@ claudia create --region us-east-1 --api-module api
 
 ##API lambda function info:
 {
-  "lambda": {
-    "role": "pizza-api-executor",
-    "name": "pizza-api",
-    "region": "us-east-1"
+  "FunctionName": "pizza-api",
+  "FunctionArn": "arn:aws:lambda:us-east-1:001178231653:function:pizza-api:2",
+  "Runtime": "nodejs8.10",
+  "Role": "arn:aws:iam::001178231653:role/pizza-api-executor",
+  "Handler": "api.proxyRouter",
+  "CodeSize": 12829207,
+  "Description": "pizza api",
+  "Timeout": 3,
+  "MemorySize": 128,
+  "LastModified": "2019-03-04T20:40:14.238+0000",
+  "CodeSha256": "pchchYiY4rymr3XUgkmIy7n4ii+JgMWjA4Mc6oAlu7E=",
+  "Version": "2",
+  "KMSKeyArn": null,
+  "TracingConfig": {
+    "Mode": "PassThrough"
   },
-  "api": {
-    "id": "h1ofvobey9",
-    "module": "api",
-    "url": "https://h1ofvobey9.execute-api.us-east-1.amazonaws.com/latest"
-  }
+  "MasterArn": null,
+  "RevisionId": "fcdfcaae-d44b-4cc7-ae73-7d27b0e2da64",
+  "url": "https://h1ofvobey9.execute-api.us-east-1.amazonaws.com/latest"
 }

@@ -1,15 +1,23 @@
-'use strict';
+'use strict'
 
-const Api = require('claudia-api-builder');
-const api = new Api();
+const Api = require('claudia-api-builder')
+const api = new Api()
+
+const getPizzas = require('./handlers/get-pizzas')
+
+
+// Define routes
+api.get('/', () => 'Welcome to Pizza API')
 
 api.get('/pizzas', () => {
-    return [
-        'Capricciosa',
-        'Quattro Formaggi',
-        'Napoletana',
-        'Margherita'
-    ]
-});
+    return getPizzas()
+})
+api.get('/pizzas/{id}', (request) => {
+    return getPizzas(request.pathParams.id)
+}, {
+    error: 404
+})
 
-module.exports = api;
+
+
+module.exports = api
